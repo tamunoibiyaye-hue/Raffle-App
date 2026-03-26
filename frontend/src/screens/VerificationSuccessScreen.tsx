@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: AppColors.primaryDark,
     flex: 1,
     justifyContent: 'center',
-    paddingHorizontal: 24,
+    paddingHorizontal: 22,
   },
   badge: {
     alignItems: 'center',
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     borderColor: '#8effa5',
     height: 184,
     justifyContent: 'center',
-    marginBottom: 42,
+    marginBottom: 34,
     width: 184,
   },
   check: {
@@ -67,9 +67,9 @@ const styles = StyleSheet.create({
     marginTop: -8,
   },
   title: {
-    ...AppTypography.h2,
+    ...AppTypography.h3,
     color: AppColors.white,
-    marginBottom: 10,
+    marginBottom: 8,
     textAlign: 'center',
   },
   subtitle: {
@@ -79,9 +79,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   buttonWrap: {
-    bottom: 28,
-    left: 24,
+    bottom: 24,
+    left: 22,
     position: 'absolute',
-    right: 24,
+    right: 22,
   },
 });

@@ -99,26 +99,26 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    paddingHorizontal: 22,
-    paddingTop: 8,
+    paddingHorizontal: 20,
+    paddingTop: 10,
   },
   topRow: {
     flexDirection: 'row',
-    marginBottom: 20,
+    marginBottom: 12,
   },
   title: {
-    ...AppTypography.h1,
-    marginBottom: 8,
+    ...AppTypography.h2,
+    marginBottom: 6,
   },
   subtitle: {
     ...AppTypography.body,
-    marginBottom: 2,
+    marginBottom: 4,
   },
   phoneRow: {
     alignItems: 'center',
     flexDirection: 'row',
     gap: 4,
-    marginBottom: 20,
+    marginBottom: 18,
   },
   phoneText: {
     color: AppColors.textPrimary,
@@ -133,23 +133,27 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 6,
-    marginTop: 22,
+    marginTop: 18,
   },
   resendPrompt: {
-    ...AppTypography.h3,
+    ...AppTypography.h4,
+    fontSize: 16,
+    lineHeight: 20,
   },
   resendLink: {
-    ...AppTypography.h3,
+    ...AppTypography.h4,
+    fontSize: 16,
+    lineHeight: 20,
     color: AppColors.primaryDark,
   },
   timer: {
-    ...AppTypography.h3,
+    ...AppTypography.bodyBold,
     color: AppColors.grey300,
     marginLeft: 'auto',
   },
   bottomSection: {
-    gap: 14,
+    gap: 10,
     paddingBottom: 10,
-    paddingHorizontal: 8,
+    paddingHorizontal: 20,
   },
 });

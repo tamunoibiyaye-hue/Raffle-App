@@ -15,29 +15,33 @@ export function OnboardingScreen({
   onSignIn,
 }: OnboardingScreenProps) {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.topArea}>
-        <ProgressDots total={3} activeIndex={2} />
-      </View>
-
-      <View style={styles.imageWrap}>
-        <View style={styles.chatBubble}>
-          <Text style={styles.starLarge}>★</Text>
-          <Text style={styles.starSmall}>★</Text>
-          <Text style={styles.starSmallRight}>★</Text>
+    <SafeAreaView style={styles.safeArea}>
+      <View style={styles.container}>
+        <View style={styles.topArea}>
+          <ProgressDots total={3} activeIndex={2} />
         </View>
-      </View>
 
-      <View style={styles.textWrap}>
-        <Text style={styles.titleAccent}>Customer friendly</Text>
-        <Text style={styles.titleMain}>
-          Seamless and transparent customer experience at every step of transfer
-        </Text>
-      </View>
+        <View style={styles.centerArea}>
+          <View style={styles.imageWrap}>
+            <View style={styles.chatBubble}>
+              <Text style={styles.starLarge}>★</Text>
+              <Text style={styles.starSmall}>★</Text>
+              <Text style={styles.starSmallRight}>★</Text>
+            </View>
+          </View>
 
-      <View style={styles.actionsRow}>
-        <PrimaryButton label="Register" onPress={onRegister} />
-        <PrimaryButton label="Sign in" onPress={onSignIn} />
+          <View style={styles.textWrap}>
+            <Text style={styles.titleAccent}>Customer friendly</Text>
+            <Text style={styles.titleMain}>
+              Seamless and transparent customer experience at every step of transfer
+            </Text>
+          </View>
+        </View>
+
+        <View style={styles.actionsRow}>
+          <PrimaryButton label="Register" onPress={onRegister} style={styles.cta} />
+          <PrimaryButton label="Sign in" onPress={onSignIn} style={styles.cta} />
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -46,76 +50,87 @@ export function OnboardingScreen({
 export default OnboardingScreen;
 
 const styles = StyleSheet.create({
+  safeArea: {
+    backgroundColor: AppColors.white,
+    flex: 1,
+  },
   container: {
     backgroundColor: AppColors.white,
     flex: 1,
-    paddingBottom: 18,
-    paddingHorizontal: 22,
+    paddingHorizontal: 20,
+    paddingTop: 12,
+    paddingBottom: 16,
   },
   topArea: {
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 2,
+  },
+  centerArea: {
+    flex: 1,
+    justifyContent: 'center',
   },
   imageWrap: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 80,
+    marginTop: 8,
   },
   chatBubble: {
     alignItems: 'center',
     backgroundColor: '#f8f8fb',
     borderColor: '#eeeeee',
-    borderRadius: 36,
+    borderRadius: 30,
     borderWidth: 1,
-    height: 220,
+    height: 200,
     justifyContent: 'center',
-    width: 290,
+    width: 270,
   },
   starLarge: {
     color: '#ffbe2d',
-    fontSize: 90,
+    fontSize: 82,
     left: 0,
     position: 'absolute',
     textShadowColor: '#f4ae20',
     textShadowOffset: { width: 0, height: 2 },
     textShadowRadius: 2,
-    top: 56,
+    top: 50,
   },
   starSmall: {
     color: '#ffcb4b',
-    fontSize: 58,
-    left: 42,
+    fontSize: 52,
+    left: 40,
     position: 'absolute',
-    top: 72,
+    top: 68,
   },
   starSmallRight: {
     color: '#ffcb4b',
-    fontSize: 58,
+    fontSize: 52,
     position: 'absolute',
-    right: 42,
-    top: 72,
+    right: 40,
+    top: 68,
   },
   textWrap: {
-    marginTop: 78,
-    paddingHorizontal: 6,
+    marginTop: 34,
+    paddingHorizontal: 10,
   },
   titleAccent: {
-    ...AppTypography.subtitle,
+    ...AppTypography.h4,
     color: AppColors.primaryDark,
-    fontSize: 32,
-    marginBottom: 14,
+    marginBottom: 8,
     textAlign: 'center',
   },
   titleMain: {
-    ...AppTypography.h2,
+    ...AppTypography.h3,
     color: AppColors.textDark,
     fontSize: 20,
-    lineHeight: 30,
+    lineHeight: 28,
     textAlign: 'center',
   },
   actionsRow: {
     flexDirection: 'row',
     gap: 14,
-    marginTop: 'auto',
+    marginTop: 8,
+  },
+  cta: {
+    flex: 1,
   },
 });

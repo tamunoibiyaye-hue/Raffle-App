@@ -3,27 +3,27 @@ import { TextStyle } from 'react-native';
 export const AppTypography: Record<string, TextStyle> = {
   h1: {
     color: '#232833',
-    fontSize: 48,
+    fontSize: 42,
     fontWeight: '800',
-    lineHeight: 56,
+    lineHeight: 48,
   },
   h2: {
     color: '#232833',
-    fontSize: 40,
+    fontSize: 34,
     fontWeight: '800',
-    lineHeight: 46,
+    lineHeight: 40,
   },
   h3: {
     color: '#232833',
-    fontSize: 30,
+    fontSize: 24,
     fontWeight: '700',
-    lineHeight: 36,
+    lineHeight: 30,
   },
   h4: {
     color: '#232833',
-    fontSize: 22,
+    fontSize: 19,
     fontWeight: '700',
-    lineHeight: 28,
+    lineHeight: 24,
   },
   subtitle: {
     color: '#232833',

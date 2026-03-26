@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: AppColors.bgGradient,
     flex: 1,
     justifyContent: 'center',
+    paddingHorizontal: 20,
   },
   logoRow: {
     alignItems: 'center',
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
   logoWrap: {
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: 240,
+    minHeight: 200,
     width: '100%',
   },
   ball: {

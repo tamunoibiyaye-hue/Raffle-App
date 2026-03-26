@@ -138,18 +138,18 @@ const styles = StyleSheet.create({
     width: 40,
   },
   content: {
-    paddingHorizontal: 22,
-    paddingTop: 24,
+    paddingHorizontal: 20,
+    paddingTop: 16,
   },
   title: {
-    ...AppTypography.h1,
-    marginBottom: 12,
-    maxWidth: 320,
+    ...AppTypography.h2,
+    marginBottom: 10,
+    maxWidth: 300,
   },
   subtitle: {
     ...AppTypography.body,
     color: AppColors.textSecondary,
-    marginBottom: 28,
+    marginBottom: 22,
     maxWidth: 330,
   },
   label: {
@@ -191,22 +191,22 @@ const styles = StyleSheet.create({
   },
   accountRow: {
     flexDirection: 'row',
-    marginTop: 22,
+    marginTop: 18,
   },
   accountText: {
-    ...AppTypography.h4,
+    ...AppTypography.subtitle,
     color: AppColors.textPrimary,
   },
   accountLink: {
-    ...AppTypography.h4,
+    ...AppTypography.subtitle,
     color: AppColors.primaryDark,
   },
   bottom: {
     gap: 12,
-    paddingBottom: 12,
-    paddingHorizontal: 22,
+    paddingBottom: 10,
+    paddingHorizontal: 20,
   },
   numberPadWrap: {
-    minHeight: 260,
+    minHeight: 220,
   },
 });
